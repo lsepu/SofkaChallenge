@@ -46,5 +46,8 @@ Dentro de Triviapp, ejecutar el comando para correr front.
 ```
 ng serve -o
 ```
-
+## Preview :bulb:
+![Menu](images/menu.png)
+![Game](images/game.png)
+![Questions](images/question.png)
 
