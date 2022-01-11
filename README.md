@@ -28,7 +28,7 @@ _Nota: El backend corre en el puerto 4000_
 Clonar el proyecto
 
 ```
-git clone https://github.com/lsepu/SofkaChallenge/
+git clone https://github.com/lsepu/SofkaChallenge.git
 ```
 
 Abrir la carpeta server e instalar dependencias, lo mismo para la carpeta TriviApp 
