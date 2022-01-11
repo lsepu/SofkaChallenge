@@ -1,0 +1,18 @@
+<h2 class="mb-5">Ingresa tu usuario</h2>
+
+<input
+  class="mb-5 user-input"
+  type="text"
+  #userName
+  placeholder="usuario"
+  id=""
+/>
+
+<div class="d-grid gap-2" style="width: 400px; margin: auto;">
+  <button (click)="addUser()" type="button" class="btn btn-primary btn-lg" routerLink="/trivia">
+    Jugar
+  </button>
+  <button type="button" class="btn btn-secondary btn-lg" routerLink="">
+    Volver
+  </button>
+</div>

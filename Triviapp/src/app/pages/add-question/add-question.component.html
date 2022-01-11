@@ -1,0 +1,81 @@
+<div *ngIf="questionScreen; else questionSent">
+  <h4>Pregunta:</h4>
+  <input
+    class="mb-5 user-input"
+    type="text"
+    name="question"
+    #question
+    placeholder="pregunta"
+    id=""
+  />
+
+  <h5>Opciones de respuesta:</h5>
+  <ul style="margin: auto; padding: 2rem">
+    <li>
+      <input
+        class="mb-3 p-3"
+        type="text"
+        name="answer"
+        placeholder="respuesta correcta"
+        #correctAnswer
+        style="background-color: rgba(96, 255, 96, 0.63)"
+        id=""
+      />
+    </li>
+    <li>
+      <input
+        class="mb-3 p-3"
+        type="text"
+        name="answer"
+        #secondAnswer
+        placeholder="respuesta"
+        id=""
+      />
+    </li>
+    <li>
+      <input
+        class="mb-3 p-3"
+        type="text"
+        name="answer"
+        #thirdAnswer
+        placeholder="respuesta"
+        id=""
+      />
+    </li>
+    <li>
+      <input
+        class="mb-3 p-3"
+        type="text"
+        name="answer"
+        #fourthAnswer
+        placeholder="respuesta"
+        id=""
+      />
+    </li>
+  </ul>
+
+  <div class="d-grid gap-2" style="width: 400px; margin: auto">
+    <button
+      (click)="sendQuestion()"
+      type="button"
+      class="btn btn-primary btn-lg"
+    >
+      Enviar
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary btn-lg"
+      routerLink="/configuration"
+    >
+      Volver
+    </button>
+  </div>
+</div>
+
+<ng-template #questionSent>
+  <h4 class="mb-5">Tu pregunta ha sido enviada!</h4>
+
+  <button type="button" class="btn btn-secondary btn-lg" routerLink="">
+    Volver
+  </button>
+</ng-template>

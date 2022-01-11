@@ -1,0 +1,13 @@
+<h2 class="mb-5">Ranking!</h2>
+
+<div class="questions">
+  <ul *ngFor="let rankMember of ranking">
+    <li class="border border-2 border-info px-5 mb-3 py-3 question-pill">
+      {{rankMember.userName}} | {{rankMember.points}} ptos
+    </li>
+  </ul>
+</div>
+
+<button type="button" class="btn btn-secondary btn-lg" routerLink="">
+  Volver
+</button>

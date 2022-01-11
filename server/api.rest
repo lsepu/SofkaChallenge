@@ -1,0 +1,41 @@
+###
+GET http://localhost:4000/api/trivia/Medio   
+
+###
+POST http://localhost:4000/api/trivia
+Content-Type: application/json
+
+{
+    "question": "¿Donde queda Japón?",
+    "r1": "Suramerica",
+    "r2": "Norteamerica",
+    "r3": "Asia",
+    "r4": "Africa",
+    "rc": "Asia",
+    "category": "Medio"
+}  
+
+###
+GET http://localhost:4000/api/trivia/user/Juana
+
+###
+POST http://localhost:4000/api/trivia/user
+Content-Type: application/json
+
+{
+    "userName": "Pedro",
+    "points": 20
+}
+
+###
+PUT http://localhost:4000/api/trivia/user/Juan
+Content-Type: application/json
+
+{
+    "points": 0
+}
+
+
+
+###
+GET http://localhost:4000/api/trivia/user/ranking/all   

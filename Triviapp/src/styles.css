@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive;
+  background-color: red;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(73, 73, 231, 1) 0%,
+    rgba(84, 135, 204, 1) 47%,
+    rgba(34, 162, 187, 1) 86%
+  );
+}
+
+.flex-container {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+}
+
+.wrap {
+  width: 800px;
+  height: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(162, 162, 255, 1) 0%,
+    rgba(0, 212, 255, 0.8883754185267857) 45%,
+    rgba(0, 212, 255, 1) 86%
+  );
+}
+
+.questions {
+  margin-bottom: 4rem;
+}
+
+.categories {
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.question-pill {
+  max-width: 600px;
+  margin: auto;
+  background-color: #5588f7;
+}
+
+.question-pill:hover {
+  background-color: #5780e0;
+  cursor: pointer;
+}
+
+.user-input {
+  padding: 0.75rem;
+  width: 400px;
+}

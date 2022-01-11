@@ -1,0 +1,35 @@
+<div *ngIf="!endScreen; else finishGame">
+  <h5 class="pb-5 pe-5" >{{ points }} ptos</h5>
+
+  <p class="mb-5 question-title">{{ question }}</p>
+
+  <div class="questions">
+    <ul *ngFor="let answer of answers">
+      <li
+        (click)="checkAnswer($event)"
+        #answerSelected
+        class="border border-2 border-info rounded-pill mb-3 py-3 question-pill p-4 me-4"
+      >
+        {{ answer }}
+      </li>
+    </ul>
+  </div>
+
+  <button
+    type="button"
+    (click)="endGame()"
+    class="btn btn-danger btn-lg"
+  >
+    Salir del Juego
+  </button>
+</div>
+
+<ng-template #finishGame>
+  <h4 class="mb-5">Ha finalizado la partida</h4>
+
+  <p>Total de puntos: {{ points }}</p>
+
+  <button type="button" class="btn btn-secondary btn-lg" routerLink="">
+    Volver
+  </button>
+</ng-template>
