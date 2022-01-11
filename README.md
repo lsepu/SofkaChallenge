@@ -44,7 +44,7 @@ npm run dev
 
 Dentro de Triviapp, ejecutar el comando para correr front. 
 ```
-ng serve
+ng serve -o
 ```
 
 
